@@ -1,0 +1,17 @@
+{
+  "name": "Jordy Deshotel",
+  "target_roles": [
+    "Data Analyst", 
+    "Sales Operations Manager", 
+    "Business Intelligence Engineer", 
+    "Program & Operations Enablement Manager"
+  ],
+  "location_preference": "Austin, TX or Remote",
+  "key_skills": [
+    "SQL", "Power BI", "Tableau", "Python", "dbt Core", "Snowflake", 
+    "Salesforce", "Program Management", "Process Optimization", "Sales Enablement"
+  ],
+  "experience_years": 15,
+  "education": "B.S. Computer Information Systems (4.0 GPA)",
+  "summary": "Seasoned professional with 15+ years in sales leadership and B2B sales operations, analytics, and enablement."
+}

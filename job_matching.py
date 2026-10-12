@@ -8,7 +8,7 @@ def evaluate_job(job_posting: dict, profile_data: dict):
     You are an expert executive recruiter and career strategist. 
     Evaluate the candidate's background against the following job posting.
     Be objective: penalize heavily if location requirements or core tool prerequisites are missing.
-    Highlight where the candidate's dual expertise in "your field" creates strong leverage.
+    Highlight where the candidate's expertise in "your field" creates strong leverage.
     """
 
     # Escape single curly braces by doubling them so LangChain doesn't treat them as template variables

@@ -1,7 +1,7 @@
 import os
 from dotenv import load_dotenv
 from langchain_core.prompts import ChatPromptTemplate
-from langchain_openai import ChatOpenAI
+from langchain_groq import ChatGroq
 from pydantic import BaseModel, Field
 
 # Load environment variables
@@ -29,6 +29,11 @@ class JobEvaluation(BaseModel):
     )
 
 
-# Instantiate the model and evaluator
-llm = ChatOpenAI(model="gpt-4o-mini", temperature=0)
+# Instantiate ChatGroq using `api_key` and active model ID
+llm = ChatGroq(
+    model="openai/gpt-oss-120b",
+    api_key=os.getenv("GROQ_API_KEY"),
+    temperature=0,
+)
+
 structured_evaluator = llm.with_structured_output(JobEvaluation)

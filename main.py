@@ -1,5 +1,6 @@
 import json
 import os
+import time
 from dotenv import load_dotenv
 
 # Import functions/classes from your custom modules
@@ -55,6 +56,8 @@ def run_pipeline():
                     job_posting=job, profile_data=profile
                 )
                 all_evaluated_jobs.append(evaluation_result)
+                # Pause 4 seconds between API calls (keeps you under 15 requests/min)
+                time.sleep(4)
             except Exception as e:
                 print(f"      ⚠️ Error evaluating job {job_title}: {e}")
 

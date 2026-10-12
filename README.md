@@ -62,7 +62,10 @@ SERPAPI_API_KEY=your_serpapi_key_here
 GROQ_API_KEY=your_groq_api_key_here
 
 ```
-## 4. Run the Pipeline
+## 4. Configure Profile
+Update profile.json with your information and add your field to the job_matching.py file:
+
+## 5. Run the Pipeline
 ```
 python main.py
 
